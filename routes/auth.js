@@ -20,4 +20,8 @@ router.get("/signout", signout);
 router.get("/hello", requireSignin, (req, res) => {
   res.send("hello there")
 })
+
+router.get("/hi", (req, res) => {
+  res.send("hihi")
+})
 module.exports = router;
